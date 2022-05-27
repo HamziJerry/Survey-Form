@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background-image: url("./bg.jpg");
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body::after {
+  content: "";
+  position: fixed;
+  background-color: #f5747f5e;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main {
+  max-width: 60%;
+  display: block;
+  margin: 40px auto;
+}
+
+#header {
+  text-align: center;
+  color: white;
+}
+
+#title {
+  margin: 5px;
+}
+#description {
+  margin: 2px;
+  font-size: 18px;
+}
+
+#form-template {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  color: white;
+  background-color: #f23d3da6;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-size: 22px;
+  margin: 8px 0px;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  padding: 8px 6px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+#comment {
+  width: 100%;
+  display: block;
+  margin: 8px 0px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 6px;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  padding: 6px;
+  margin: 8px 0px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #37af65;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #main {
+    max-width: 80%;
+  }
+
+  label,
+  input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 483px) {
+  #main {
+    max-width: 95%;
+  }
+}

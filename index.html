@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <header id="header">
+        <h1 id="title">About Your Self</h1>
+        <p id="description">I am here to appreciate your choice</p>
+      </header>
+      <section id="form-template">
+        <form action="#" id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter your Email"
+            required
+          />
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            class="form-input"
+            placeholder="Age"
+            min="10"
+            max="120"
+            required
+          />
+          <label for="dropdown"
+            >Which Car Do You Like Most From Below Options?</label
+          >
+          <select name="car" id="dropdown">
+            <option value="ferrari">Ferrari</option>
+            <option value="bugatti">Bugatti</option>
+            <option value="lamborghini">Lamborghini</option>
+            <option value="rolls-royce">Rolls Royce</option>
+          </select>
+          <label for="">What Would You Prefer For Traveling?</label>
+          <label class="radio-label" for="aeroplane"
+            ><input
+              type="radio"
+              id="aeroplane"
+              name="travel-through"
+              value="aeroplane"
+              checked
+            />Aeroplane</label
+          >
+          <label class="radio-label" for="car"
+            ><input
+              type="radio"
+              id="car"
+              name="travel-through"
+              value="car"
+            />Car</label
+          >
+          <label class="radio-label" for="bike"
+            ><input
+              type="radio"
+              id="bike"
+              name="travel-through"
+              value="bike"
+            />Bike</label
+          >
+          <label class="radio-label" for="cycle"
+            ><input
+              type="radio"
+              id="cycle"
+              name="travel-through"
+              value="cycle"
+            />Bicycle</label
+          >
+          <label for="">Which food do you like?</label>
+          <label class="checkbox-label" for="biryani"
+            ><input
+              type="checkbox"
+              id="biryani"
+              name="food-selection"
+              value="biryani"
+              checked
+            />Biryani</label
+          >
+          <label class="checkbox-label" for="pasta"
+            ><input
+              type="checkbox"
+              id="pasta"
+              name="food-selection"
+              value="pasta"
+            />Pasta</label
+          >
+          <label class="checkbox-label" for="kheer"
+            ><input
+              type="checkbox"
+              id="kheer"
+              name="food-selection"
+              value="kheer"
+            />Kheer</label
+          >
+          <label class="checkbox-label" for="salad"
+            ><input
+              type="checkbox"
+              id="salad"
+              name="food-selection"
+              value="salad"
+            />Salad</label
+          >
+          <label class="checkbox-label" for="pulao"
+            ><input
+              type="checkbox"
+              id="pulao"
+              name="food-selection"
+              value="pulao"
+            />Pulao</label
+          >
+          <label class="checkbox-label" for="soup"
+            ><input
+              type="checkbox"
+              id="soup"
+              name="food-selection"
+              value="soup"
+            />Soup</label
+          >
+          <label for="comment">Any Suggestion Or Comment About Yourself</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+          ></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>
